@@ -1,25 +1,29 @@
 package calculator;
 
 public class Calculator {
-    float a ,b;
+    float firstOperand;
+    float secondOperand;
     Substraction substraction;
     Adition adition;
     Multiplication multiplication;
     Division division;
-    Calculator(float _firstNumber, float _secondNumber) {
-        a = _firstNumber;
-        b = _secondNumber;
+
+    Calculator(float firstNumber, float secondNumber) {
+        firstOperand = firstNumber;
+        secondOperand = secondNumber;
     }
 
     void usarSuma(){
-        adition = new Adition(a, b);
+        adition = new Adition(firstOperand, secondOperand);
     }
     void usarResta(){
-        substraction = new Substraction(a, b);
+        substraction = new Substraction(firstOperand, secondOperand);
     }
     void usarMult() {
-        multiplication = new Multiplication(a,b);
+        multiplication = new Multiplication(firstOperand, secondOperand);
     }
-    void userDiv() { division = new Division(a,b); }
+    void userDiv() { 
+        division = new Division(firstOperand, secondOperand); 
+    }
 
 }

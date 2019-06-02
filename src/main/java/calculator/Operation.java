@@ -1,7 +1,7 @@
 package calculator;
 
 public abstract class Operation {
-    float a = 0;
-    float b = 0;
+    float firstOperand = 0;
+    float secondOperand = 0;
     abstract float operar();
 }

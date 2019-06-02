@@ -2,12 +2,12 @@ package calculator;
 
 
 public class Multiplication extends Operation {
-    public Multiplication(float _firstNumber, float _secondNumber) {
-        a = _firstNumber;
-        b = _secondNumber;
+    public Multiplication(float firstNumber, float secondNumber) {
+        firstOperand = firstNumber;
+        secondOperand = secondNumber;
     }
 
     public float operar() {
-        return a*b;
+        return firstOperand*secondOperand;
     }
 }
